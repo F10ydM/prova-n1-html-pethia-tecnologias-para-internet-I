@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags essenciais para SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pethia Software - Sistema de gestão completo para clínicas veterinárias e pet shops. Transforme o atendimento da sua clínica na palma da mão.">
+    <meta name="author" content="[SEU NOME COMPLETO]">
+    <title>Pethia Software - Gestão para Clínicas Veterinárias e Pet Shops</title>
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+        }
+        
+        /* Navegação */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Main */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 4rem;
+        }
+        
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+        
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        #hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Figure */
+        figure {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        figcaption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
+        }
+        
+        /* Video */
+        .video-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .video-container iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Tabela de Preços */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        thead {
+            background: #667eea;
+            color: white;
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* Formulário */
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        
+        fieldset {
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+        
+        legend {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 0 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #5568d3;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            #hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Nome: [Arthur Moreira Martins]
+        RA: [5168694]
+    -->
+    
+    <!-- Header com navegação -->
+    <header>
+        <div class="container">
+            <h1>🐾 Pethia Software</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre o Sistema</a></li>
+                    <li><a href="#demonstracao">Demonstração</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero -->
+        <section id="hero">
+            <h2>Transforme o atendimento da sua Clínica</h2>
+            <p>A gestão do seu Pet Shop na palma da mão</p>
+        </section>
+        
+        <!-- Seção Sobre o Sistema -->
+        <section id="sobre">
+            <h2>Sobre o Sistema</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                Nosso sistema oferece agendamento de banho e tosa, prontuário veterinário eletrônico 
+                e controle de estoque de forma integrada. Simplifique a gestão da sua clínica veterinária 
+                ou pet shop com uma solução completa e intuitiva.
+            </p>
+            
+            <!-- Figure com imagem e legenda -->
+            <figure>
+                <img src="https://images.unsplash.com/photo-1581888227599-779811939961?w=800" 
+                     alt="Interface principal do sistema exibindo gráficos de agendamento e faturamento">
+                <figcaption>Figura 1: Dashboard interativo para acompanhamento de métricas.</figcaption>
+            </figure>
+        </section>
+        
+        <!-- Seção de Vídeo Demonstração -->
+        <section id="demonstracao">
+            <h2>Vídeo de Demonstração</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">
+                Veja como é simples cadastrar um novo paciente no sistema:
+            </p>
+            
+            <div class="video-container">
+                <iframe width="800" height="450" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Demonstração do Sistema Pethia Software"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+        
+        <!-- Seção de Planos e Preços -->
+        <section id="planos">
+            <h2>Nossos Planos</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Funcionalidades Inclusas</th>
+                        <th>Valor Mensal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Básico</td>
+                        <td>Agendamento e Controle de Caixa</td>
+                        <td>R$ 99,90</td>
+                    </tr>
+                    <tr>
+                        <td>Pro</td>
+                        <td>Prontuário, Estoque e Lembretes via WhatsApp</td>
+                        <td>R$ 199,90</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>Múltiplas Filiais e Relatórios Avançados</td>
+                        <td>R$ 299,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Seção de Formulário de Contato -->
+        <section id="contato">
+            <h2>Solicite um Orçamento</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados para Contato</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" 
+                           id="nome" 
+                           name="nome" 
+                           placeholder="Digite seu nome completo" 
+                           required>
+                    
+                    <label for="email">E-mail Comercial:</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           placeholder="contato@seupetshop.com.br" 
+                           required>
+                    
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" 
+                           id="telefone" 
+                           name="telefone" 
+                           placeholder="(00) 00000-0000" 
+                           pattern="[0-9]{10,11}" 
+                           required>
+                    
+                    <label for="mensagem">Como podemos ajudar?</label>
+                    <textarea id="mensagem" 
+                              name="mensagem" 
+                              rows="5" 
+                              placeholder="Fale um pouco sobre o tamanho da sua equipe e necessidades..." 
+                              required></textarea>
+                    
+                    <button type="submit">Enviar Solicitação</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p><strong>Pethia Software</strong> - Gestão Veterinária Inteligente</p>
+        <p>© 2026 - Todos os direitos reservados</p>
+        <p>Desenvolvido por [SEU NOME]</p>
+    </footer>
+</body>
+</html>

@@ -2,8 +2,8 @@
 
 ## 📝 Identificação do Aluno
 
-**Nome:** [SEU NOME COMPLETO]  
-**RA:** [SEU RA]
+**Nome:** Arthur Moreira Martins  
+**RA:** 5168694
 
 ---
 
@@ -50,5 +50,5 @@ Landing Page para o sistema de gestão **Pethia Software**, desenvolvido como pr
 ---
 
 **Professor:** Maxwell Gomes  
-**Disciplina:** Desenvolvimento Web  
-**Data de Entrega:** 23/04/2026
+**Disciplina:** Tecnologias para Internet I  
+**Data de Entrega:** 24/04/2026
